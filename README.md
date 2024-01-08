@@ -1,0 +1,2 @@
+# Kaffemaskin-TEST
+ Gherkin assigment
