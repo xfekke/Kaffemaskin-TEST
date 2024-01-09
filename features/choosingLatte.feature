@@ -4,6 +4,7 @@ Feature: Using Coffee Machine For Latte
 
   Scenario: If
     Given that the machine is turned on
+    And the machine has been cleaned
     And there is grounded coffee beans in the container
     And there is milk in the machine
     And the strength is chosen
@@ -14,6 +15,7 @@ Feature: Using Coffee Machine For Latte
 
   Scenario: There Is No Grounded Beans
     Given that the coffee machine is turned on
+    And the machine has been cleaned
     And there is no grounded coffee beans in the container
     When I select the option for a Latte
     Then I should be informed the machine is out of coffee
@@ -21,6 +23,7 @@ Feature: Using Coffee Machine For Latte
 
   Scenario: There Is No Milk
     Given that the coffee machine is turned on
+    And the machine has been cleaned
     And there is no milk in the machine
     When I select the option for a Latte
     Then I should be informed the machine is out of milk

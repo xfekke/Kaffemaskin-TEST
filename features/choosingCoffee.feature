@@ -4,6 +4,7 @@ Feature: Using Coffee Machine for Black Coffee
 
   Scenario: If
     Given that the coffee machine is turned on
+    And the machine has been cleaned
     And there is grounded coffee beans in the container
     When I select the option for a black coffee
     And the strength is chosen
@@ -13,6 +14,7 @@ Feature: Using Coffee Machine for Black Coffee
 
   Scenario: There Is No Grounded Beans
     Given that the coffee machine is turned on
+    And the machine has been cleaned
     And there is no grounded coffee beans in the container
     When I select the option for a black coffee
     Then I should be informed the machine is out of coffee

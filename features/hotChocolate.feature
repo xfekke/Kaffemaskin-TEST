@@ -4,6 +4,7 @@ Feature: Using Coffee Machine For Hot Chocolate
 
   Scenario: If
     Given that the machine is turned on
+    And the machine has been cleaned
     And there is chocolate powder in the container
     And there is milk in the machine
     And the strength is chosen
@@ -14,6 +15,7 @@ Feature: Using Coffee Machine For Hot Chocolate
 
   Scenario: There Is No Chocolate Powder
     Given that the coffee machine is turned on
+    And the machine has been cleaned
     And there is no chocolate powder in the container
     When I select the option for a Hot Chocolate
     Then I should be informed the machine is out of chocolate
@@ -21,6 +23,7 @@ Feature: Using Coffee Machine For Hot Chocolate
 
   Scenario: There Is No Milk
     Given that the coffee machine is turned on
+    And the machine has been cleaned
     And there is no milk in the machine
     When I select the option for a Hot Chocolate
     Then I should be informed the machine is out of milk
