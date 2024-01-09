@@ -8,7 +8,6 @@ Feature: Choose Coffee Strength
     Then the choice should be registered
     And the coffee should eventually be delivered with a weaker strength
 
-
   Scenario: Sucessful increase the strength of the coffee
     Given that I have already chosen which type of coffee I want
     When I want to choose a stronger strength I can press the upward button to go from normal to strong
